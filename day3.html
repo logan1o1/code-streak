@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>WORLD CLOCK</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString();
+            time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+            document.getElementById('time').innerHTML = time + " on " + date;
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="container my-4">
+            <div class="jumbotron">
+                <h1 class="display-4">Current Time:</h1>
+                <p class="lead">this is the current date and time:
+                    <span id="time"></span>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
