@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 6</title>
+</head>
+
+<body>
+    <script>
+        // JS code to determine if two values are of same type or not
+
+        function is_same(value1, value2) {
+            if (is_nan(value1) || is_nan(value2)) {
+                return is_nan(value1) === is_nan(value2);
+            }
+            return toString.call(value1) === toString.call(value2);
+        }
+        function is_nan(val) {
+            return val != val;
+        }
+        console.log(is_same(true,45))
+        console.log(is_same(23,45))
+        console.log(is_same(23,'apple'))
+    </script>
+</body>
+
+</html>
