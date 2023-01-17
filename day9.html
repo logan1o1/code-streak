@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 9</title>
+</head>
+<body>
+    <script>
+        // To vallidate whether a value is a pure json object or not
+
+        function is_json(value) {
+            return toString.call(value) === '[object Object]';
+        }
+
+        console.log(is_json('cross'));
+        console.log(is_json({ name: 'lucifer' }));
+        console.log(is_json(45));
+    </script>
+</body>
+</html>
