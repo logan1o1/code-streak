@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 13</title>
+</head>
+<body>
+    <script>
+        // Program to accept a no. as input and insert (-) between 2 even nos.
+        const num = window.prompt();
+        const str = num.toString();
+        const result = [str[0]];
+
+        for (let n = 1; n < str.length; n++) {
+            if ((str[n - 1] % 2 === 0) && (str[n] % 2 === 0)) {
+                result.push('-', str[n]);
+            }
+            else{
+                result.push(str[n]);
+            }
+        }
+        console.log(result.join(''));
+    </script>
+</body>
+</html>
