@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 14</title>
+</head>
+
+<body>
+    <script>
+        var students = [
+            {
+                name: "Saswat Mahapatra",
+                Reg_no: "21BCG10142",
+                ExamStatus: "pass"
+            },
+            {
+                name: "Punarv Rao",
+                Reg_no: "21BCG10178",
+                ExamStatus: "pass"
+            },
+            {
+                name: "Ankit Singh",
+                Reg_no: "21BCG10154",
+                ExamStatus: "fail"
+            },
+            {
+                name: "Ajit Gosh",
+                Reg_no: "21BCG10015",
+                ExamStatus: "back"
+            }];
+
+        for (var i = 0; i < students.length; i++) {
+            var stu = "Student " + students[i].name + "," + students[i].Reg_no;
+            if (students[i].ExamStatus == "pass") {
+                console.log(stu + "has already passed" + "no need for further examination");
+            }
+            else if (students[i].ExamStatus == "fail") {
+                console.log(stu + "has failed" + "need to go through further examination to pass");
+            }
+            else{
+                console.log(stu + "has a back-log" + "need to repet the subject in the next sem to pass");
+            }
+        }
+    </script>
+</body>
+
+</html>
