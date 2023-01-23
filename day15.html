@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 15</title>
+</head>
+<body>
+    <script>
+        //program to see if a person is eligible for driving licence
+        var age = window.prompt();
+        function eligible(value) {            
+            if (age > 18) {
+                console.log("The person is eligible to obtain a driving licence");
+            }
+            else if(age == 18){
+                console.log("The person is only eligible for learning licence")
+            }
+            else{
+                console.log("The person is not eligible for licence")
+            }
+        }
+        console.log(eligible(age))
+    </script>
+</body>
+</html>
