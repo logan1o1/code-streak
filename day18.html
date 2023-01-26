@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 18</title>
+</head>
+<body>
+    <script>
+        // A javascript function to check wether an input is array or not
+        function is_arr(input) {
+            if (toString.call(input) == "[object Array]") {
+                return true;
+            }
+            return false;
+        }
+        console.log(is_arr("lucifer"));
+        console.log(is_arr(["l","u","c","i","f","e","r"]));
+    </script>
+</body>
+</html>
